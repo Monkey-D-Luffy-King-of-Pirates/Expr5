@@ -12,21 +12,16 @@ namespace Expr5
         {
             if ((a % 4 == 0) || (b % 4 == 0))
             {
-                a = b - a;
-                b = a / 4;
-                return b + 1;
+                return ((b - a) / 4) + 1; 
 
             }
             else if((a % 4 == 0) && (b % 4 == 0))
             {
-                a = b - a;
-                b = a / 4;
-                return b + 2;
+                return ((b - a) / 4) + 2;
             }
             else 
             {
-                a = b - a;
-                return a / 4;
+                return (b - a) / 4;
             }
         }
        

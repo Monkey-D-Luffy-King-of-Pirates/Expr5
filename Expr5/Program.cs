@@ -15,10 +15,6 @@ namespace Expr5
                 return ((b - a) / 4) + 1; 
 
             }
-            else if((a % 4 == 0) && (b % 4 == 0))
-            {
-                return ((b - a) / 4) + 2;
-            }
             else 
             {
                 return (b - a) / 4;
@@ -27,7 +23,7 @@ namespace Expr5
        
         static void Main(string[] args)
         {
-            int c = LeapYears(1996, 2012);
+            int c = LeapYears(2000, 2016);
             Console.WriteLine(c);
             Console.ReadKey();
         }
